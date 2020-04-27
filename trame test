@@ -9,7 +9,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class notification extends JavaPlugin {
 	public void onEnable() {
-		//action à effectuer au démarage du plugin
 		getLogger().info("Plugin Démarré");
 	
 		
