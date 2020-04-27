@@ -1,0 +1,57 @@
+package illustrateur;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.ListIterator;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class notification extends JavaPlugin {
+	public void onEnable() {
+		//action à effectuer au démarage du plugin
+		getLogger().info("Plugin Démarré");
+	
+		
+// création de la variable liste 
+	public static void main(String[] args) {
+	      List<String> list = new ArrayList<String>();
+	      list.add("a");
+	      list.add("b");
+	      list.add("c");
+	      list.add("d");
+	      list.add("e");
+	      list.add("f");
+	      
+	      Collections.shuffle(list);
+	      System.out.println(list);
+	      
+	      Collections.sort(list);
+	      System.out.println(list);
+	      
+	      Collections.rotate(list, -1);
+	      System.out.println(list);
+	      
+
+	      List<String> sub = list.subList(2, 5);
+	      System.out.println(sub);
+	      Collections.reverse(sub);
+	      System.out.println(sub);
+	      
+	     
+	      ListIterator<String> it = list.listIterator();
+	      while(it.hasNext()){
+	         String str = it.next();
+	         if(str.equals("d"))
+	            it.set("z");
+	      }
+	      while(it.hasPrevious())
+	         System.out.print(it.previous());
+	      
+	      
+	   
+	     
+	   }
+	
+}
+}
